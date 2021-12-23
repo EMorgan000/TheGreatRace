@@ -1,0 +1,77 @@
+/* 
+Dev:           Eric Morgan
+Date:          12/22/21
+Filename:      styles.css
+*/
+
+#imgDiv>img {
+    width: 150px;
+}
+
+div>img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* Background image fills the entire screen */
+body {
+    background: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Characters positions fixed to accomodate animation */
+#sponge {
+    position: fixed;
+    top: 30px;
+    left: 750px;
+}
+
+#star {
+    position: fixed;
+    top: 30px;
+    left: 600px;
+}
+
+#finish>img {
+    position: fixed;
+    top: 600px;
+    left: 1350px;
+    width: 300px;
+}
+
+/* For laptop screens - I recommend viewing this page on a desktop computer */
+@media only screen and (max-width: 1280px) {
+    body {
+        background-image: url("images/background2.jpg");
+
+    }
+
+    #imgDiv>img {
+        width: 100px;
+    }
+
+    div>img {
+        width: 150px;
+        margin-top: 10px;
+    }
+
+    #sponge {
+        position: fixed;
+        top: 25px;
+        left: 550px;
+    }
+
+    #star {
+        position: fixed;
+        top: 30px;
+        left: 490px;
+    }
+
+    #finish>img {
+        position: fixed;
+        top: 300px;
+        left: 1000px;
+        width: 250px;
+    }
+}
